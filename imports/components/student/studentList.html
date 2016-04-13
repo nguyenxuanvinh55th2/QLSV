@@ -1,0 +1,8 @@
+<div class="studentList">
+  <ul>
+    <li ng-repeat="task in $ctrl.tasks">
+      <button class="studentList" ng-click="$ctrl.setID(task)">{{ task.name }}</button>
+      <button ng-click="$ctrl.deleteStudent(task)" onclick="alert('bạn có muốn xóa trường này')" > Xóa </button>
+    </li>
+  </ul>
+</div>

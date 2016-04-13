@@ -1,0 +1,12 @@
+{
+  "name": "QLSV",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-meteor": "^1.3.10-rc.0",
+    "meteor-node-stubs": "~0.2.0"
+  }
+}
