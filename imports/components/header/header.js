@@ -9,7 +9,7 @@ class HeaderCtrl {
   }
 }
 
-//Module trả về menu chính
+//Module trả về header
 export default angular.module('newHeader', [
   angularMeteor,
   menu.name
