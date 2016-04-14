@@ -1,18 +1,12 @@
 import angular from 'angular';
 import angularMeteor from 'angular-meteor';
-import studentList from '../imports/components/student/studentList';
-import informationList from '../imports/components/student/informationList';
+import main_content from '../imports/components/main_content/main_content';
+import menu from '../imports/components/menu/menu';
 
 //Module hiển thị d
 angular.module('information-load', [
     angularMeteor,
-    studentList.name,
-    informationList.name
+    main_content.name,
+    menu.name
   ]
 );
-
-/*angular.module('student-load', [
-    angularMeteor,
-    studentList.name
-  ]
-);*/

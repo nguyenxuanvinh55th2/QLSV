@@ -16,3 +16,7 @@ button.informationList{
 li{
   list-style: none;
 }
+
+menu{
+  visibility: hidden;
+}
