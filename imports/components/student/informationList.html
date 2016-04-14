@@ -1,21 +1,21 @@
 <td>
 
-<!--Thông tin sinh viên-->
-<div class="information">
-      <label class="informationList">Khoa: {{ $ctrl.facl.facultyName }} </label>
-      <br>
-        <label class="informationList">Tên: {{ $ctrl.tasks.name }}</label>
-      <br>
-      <div ng-if="$ctrl.tasks.sex == true">
+ <!--Thông tin sinh viên-->
+ <div class="information">
+       <label class="informationList">Khoa: {{ $ctrl.facl.facultyName }} </label>
+       <br>
+         <label class="informationList">Tên: {{ $ctrl.tasks.name }}</label>
+       <br>
+       <div ng-if="$ctrl.tasks.sex == true">
         <label class="informationList">Giới Tính: Nam </label>
-      </div>
-      <div ng-if="$ctrl.tasks.sex == false">
-        <label class="informationList">Giới Tính: Nữ </label>
-      </div>
-      <label class="informationList">Địa Chỉ: {{ $ctrl.tasks.adress }}</label>
-      <br>
-      <label class="informationList">Điện Thoại: {{ $ctrl.tasks.phone }}</label>
-</div>
+       </div>
+       <div ng-if="$ctrl.tasks.sex == false">
+         <label class="informationList">Giới Tính: Nữ </label>
+       </div>
+       <label class="informationList">Địa Chỉ: {{ $ctrl.tasks.adress }}</label>
+       <br>
+       <label class="informationList">Điện Thoại: {{ $ctrl.tasks.phone }}</label>
+ </div>
 </td>
 
 <td>
@@ -38,6 +38,7 @@
     <input type="submit" ng-click = "$ctrl.updateStudent($ctrl.tasks, $ctrl.info)" onclick="document.getElementById('faculty').style.visibility = 'hidden'"/>
 
   </div>
+  
   <br>
 
   <!--#######################################################################-->
@@ -54,6 +55,7 @@
     <input type="submit" ng-click = "$ctrl.updateStudent($ctrl.tasks, $ctrl.info)" onclick="document.getElementById('name').style.visibility = 'hidden'"/>
 
   </div>
+  
   <br>
 
   <!--#######################################################################-->
@@ -73,6 +75,7 @@
     <input type="submit" ng-click = "$ctrl.updateStudent($ctrl.tasks, $ctrl.info)" onclick="document.getElementById('sex').style.visibility = 'hidden'"/>
 
   </div>
+  
   <br>
 
   <!--#######################################################################-->
@@ -89,6 +92,7 @@
     <input type="submit" ng-click = "$ctrl.updateStudent($ctrl.tasks, $ctrl.info)" onclick="document.getElementById('adress').style.visibility = 'hidden'"/>
 
   </div>
+  
   <br>
 
   <!--#######################################################################-->
