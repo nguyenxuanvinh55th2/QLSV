@@ -10,6 +10,7 @@ class main_contentCtrl{
   }
 }
 
+//Module chứa nội dung chính bao gồm danh sách sinh viên và thông tin sinh viên
 export default angular.module('main_content-load', [
     angularMeteor,
     studentList.name,

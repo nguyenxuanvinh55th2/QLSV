@@ -22,6 +22,7 @@ class InformationCtrl{
     })
   }
 
+  //phương thức thực hiện update dữ liệu
   updateStudent(tasks, info){
       console.log("gia tri" + tasks._id);
 
@@ -68,6 +69,7 @@ class InformationCtrl{
   }
 }
 
+//trả về module chứa thông tin sinh viên
 export default angular.module('informationList',[
   angularMeteor
 ]).component('information', {

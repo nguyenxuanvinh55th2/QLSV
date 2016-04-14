@@ -1,4 +1,6 @@
 <td>
+
+<!--Thông tin sinh viên-->
 <div class="information">
       <label class="informationList">Khoa: {{ $ctrl.facl.facultyName }} </label>
       <br>
@@ -17,47 +19,90 @@
 </td>
 
 <td>
+
+  <!--#######################################################################-->
+  <!--button hiển thị thẻ div sửa thông tin khoa-->
   <button class="informationList" onclick="document.getElementById('faculty').style.visibility = 'visible';">Sửa</button>
+
+  <!--thẻ div sửa thông tin khoa-->
   <div style="display: inline-block; visibility: hidden;" id="faculty">
-    <!--<input ng-model="$ctrl.info.sex" class="information_update" type="text" />-->
+
+    <!--dropdown list chứa danh sách khoa-->
     <select ng-model="$ctrl.info.faculty">
       <option value="CNTT"> Công Nghệ Thông Tin </option>
       <option value="TOAN"> Toán </option>
       <option value="SINH"> Sinh </option>
     </select>
+
+    <!--input thực hiện update dữ liệu-->
     <input type="submit" ng-click = "$ctrl.updateStudent($ctrl.tasks, $ctrl.info)" onclick="document.getElementById('faculty').style.visibility = 'hidden'"/>
+
   </div>
   <br>
 
-  <button class="informationList" onclick="document.getElementById('name').style.visibility = 'visible';">Sửa</button>
-  <div style="display: inline-block; visibility: hidden;" id="name">
+  <!--#######################################################################-->
+  <!--button hiển thị thẻ div sửa tên sinh viên-->
+  <button class="informationList" onclick="document.getElementById('uname').style.visibility = 'visible';">Sửa</button>
+
+  <!--thẻ div sửa tên sinh viên-->
+  <div style="display: inline-block; visibility: hidden;" id="uname">
+
+    <!--input chứa tên sinh viên-->
     <input ng-model="$ctrl.info.name" class="information_update" type="text" />
+
+    <!--input thực hiện update dữ liệu-->
     <input type="submit" ng-click = "$ctrl.updateStudent($ctrl.tasks, $ctrl.info)" onclick="document.getElementById('name').style.visibility = 'hidden'"/>
+
   </div>
   <br>
 
+  <!--#######################################################################-->
+  <!--button hiển thị thẻ div sửa giới tính-->
   <button class="informationList" onclick="document.getElementById('sex').style.visibility = 'visible';">Sửa</button>
+
+  <!--thẻ div sửa giới tính sinh viên-->
   <div style="display: inline-block; visibility: hidden;" id="sex">
-    <!--<input ng-model="$ctrl.info.sex" class="information_update" type="text" />-->
+
+    <!--dropdown list giới tính gồm hai tùy chọn nam, nữ-->
     <select ng-model="$ctrl.info.sex">
       <option value="nam"> Nam </option>
       <option value="nu"> Nữ </option>
     </select>
+
+    <!--input thực hiện update dữ liệu-->
     <input type="submit" ng-click = "$ctrl.updateStudent($ctrl.tasks, $ctrl.info)" onclick="document.getElementById('sex').style.visibility = 'hidden'"/>
+
   </div>
   <br>
 
+  <!--#######################################################################-->
+  <!--button hiển thị thẻ div sửa địa chỉ-->
   <button class="informationList" onclick="document.getElementById('adress').style.visibility = 'visible';">Sửa</button>
+
+  <!--thẻ div sửa địa chỉ sinh viên-->
   <div style="display: inline-block; visibility: hidden;" id="adress">
+
+    <!--input chứa địa chỉ sinh viên-->
     <input ng-model="$ctrl.info.adress" class="information_update" type="text" />
+
+    <!--input thực hiện update dữ liệu-->
     <input type="submit" ng-click = "$ctrl.updateStudent($ctrl.tasks, $ctrl.info)" onclick="document.getElementById('adress').style.visibility = 'hidden'"/>
+
   </div>
   <br>
 
+  <!--#######################################################################-->
+  <!--button hiển thị thẻ div sửa số điện thoại-->
   <button class="informationList" onclick="document.getElementById('phone').style.visibility = 'visible';">Sửa</button>
+
+  <!--thẻ div sửa số điện thoại-->
   <div style="display: inline-block; visibility: hidden;" id="phone">
+
+    <!--input chứa số điện thoại mới-->
     <input ng-model="$ctrl.info.phone" class="information_update" type="text" />
+
+    <!--input thực hiện update dữ liệu-->
     <input type="submit" ng-click = "$ctrl.updateStudent($ctrl.tasks, $ctrl.info)" onclick="document.getElementById('phone').style.visibility = 'hidden'"/>
+
   </div>
-  <br>
 </td>

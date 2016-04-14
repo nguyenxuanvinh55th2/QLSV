@@ -4,15 +4,19 @@
 
 <body>
   <div ng-app="information-load" style="display: inline-block;">
+
+    <!--header của trang web-->
     <header>
       <button id="button" onclick="document.getElementById('menu').style.visibility = 'visible';" >Menu</button>
     </header>
 
+    <!--menu chính-->
     <div id="name" style="float: left;">
       <menu id="menu" onclick="document.getElementById('menu').style.visibility = 'hidden';">
       </menu>
     </div>
 
+    <!--nội dung chính-->
     <main-content></main-content>
 </div>
 </body>

@@ -16,18 +16,21 @@ class StudentCtrl{
     })
   }
 
+  //phương thức gửi mã sinh viên và mã khoa tương ứng vào session
   setID(task)
   {
    Session.set("studentID", task._id);
    Session.set("facultyID", task.faculty);
   }
 
+  //phương thức xóa sinh viên theo id
   deleteStudent(task)
   {
       Student.remove(task._id);
   }
 }
 
+//trả về module chứa danh sách sinh viên
 export default angular.module('studentList',[
   angularMeteor
 ]).component('student', {

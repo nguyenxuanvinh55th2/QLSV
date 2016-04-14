@@ -8,6 +8,7 @@ class MenuCtrl {
   }
 }
 
+//Module trả về menu chính
 export default angular.module('menu', [
   angularMeteor
 ])
